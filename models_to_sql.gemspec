@@ -16,10 +16,12 @@ Gem::Specification.new do |s|
   ]
   s.files = [
     "README",
+    "Rakefile",
     "VERSION",
-    "lib/array.rb",
     "lib/dumper.rb",
+    "lib/models_to_sql.rb",
     "lib/models_to_sql/active_record.rb",
+    "lib/models_to_sql/array.rb",
     "lib/models_to_sql/climber.rb"
   ]
   s.homepage = "https://github.com/vivrass/canada-provinces-select"

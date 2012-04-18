@@ -1,0 +1,13 @@
+========================
+This gem was based on models-to-sql-rails-plugin (https://github.com/dsabanin/models-to-sql-rails-plugin)
+
+Original README
+========================
+This plugin allows you to dump ActiveRecord models graphs back into SQL or Rails fixtures format.
+
+After installation, each AR model has to_sql method that can take following options:
+
+  :ignore_associations_for - do not dump associations with specified models. (default: empty)
+  :ignore_models - do not dump specified models. Array of ruby Class objects is used. (default: empty)
+  :ignore_tables - do not dump specified tables (default: empty)
+  :debug - debugging mode (default: false)

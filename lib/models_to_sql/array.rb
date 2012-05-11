@@ -1,8 +1,8 @@
 class Array
 
-  def to_sql(*anything)
+  def to_sql_insert(*anything)
     map do |leaf|
-      leaf.to_sql(*anything)
+      leaf.to_sql_insert(*anything)
     end
   end
 

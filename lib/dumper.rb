@@ -1,8 +1,8 @@
 class Array
   
-  def to_sql(*anything)
+  def to_sql_insert(*anything)
     bananas = map do |leaf|
-      leaf.to_sql(*anything)
+      leaf.to_sql_insert(*anything)
     end
     SQLMonkey.sort_out_bananas(bananas)
   end
@@ -12,13 +12,13 @@ end
 module ActiveRecord
   class Base
 
-    def to_sql(baton={})
+    def to_sql_insert(baton={})
       TreeClimber.new(self, baton).climb_with(SQLMonkey)
     end
   
     def to_sql_file(filepath, options={})
       File.open(filepath, "w") do |fp|
-        fp << to_sql(options)
+        fp << to_sql_insert(options)
       end
     end
     

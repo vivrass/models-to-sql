@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.date = "2012-04-18"
   s.description = "Dump ActiveRecord models graphs back into SQL or Rails fixtures format. Easily convert a model or an array of models to SQL insertion."
   s.extra_rdoc_files = [
-    "README"
+    "README.md"
   ]
   s.files = [
     "README.md",

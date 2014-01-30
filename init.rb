@@ -1,1 +1,1 @@
-require 'models-to-sql-rails'
+require 'models_to_sql'

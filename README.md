@@ -10,7 +10,7 @@ Usage
 ---------------
 If you want use this gem in your project, you must add the following line to your `gemfile`:
 ```ruby
-gem 'models_to_sql', :git => 'git://github.com/paladini/models-to-sql.git'
+gem 'models-to-sql-rails', :git => 'git://github.com/paladini/models-to-sql-rails.git'
 ```
 Then, you must open your terminal (Ctrl+Alt+T) and run the following command on your project root path:
 ```shell
@@ -24,6 +24,8 @@ Examples
 Imagine that you have a scenario like that:
 
 ```ruby
+require 'models_to_sql'
+
 items = []
 for i in 0..10
   items << Item.new(

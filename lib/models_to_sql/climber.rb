@@ -37,12 +37,19 @@ module ModelsToSql
     end
 
     def self.sql(model)
+      
+      include ActiveModel::AttributeMethods
       c = model.connection
 
       quoted_columns = []
       quoted_values = []
 
-      attributes_with_values = model.send(:arel_attributes_values, true, true)
+      if Rails.version.to_i >= 4
+        attributes_with_values = model.send(:arel_attributes_with_values_for_create, model.attribute_names)
+      else
+        attributes_with_values = model.send(:arel_attributes_values, true, true)
+      end
+
       attributes_with_values.each_pair do |key,value|
         quoted_columns << c.quote_column_name(key.name)
         quoted_values << c.quote(value)

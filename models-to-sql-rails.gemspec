@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "lib/dumper.rb",
-    "lib/models_to_sql.rb",
+    "lib/models-to-sql-rails.rb",
     "lib/models_to_sql/active_record.rb",
     "lib/models_to_sql/array.rb",
     "lib/models_to_sql/climber.rb"

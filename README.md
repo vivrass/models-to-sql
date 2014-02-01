@@ -81,7 +81,7 @@ end
 
 ```
 
-Simple? If have any issue or problem, [talk to us now](https://github.com/vivrass/models-to-sql/issues).
+Simple? If have any issue or problem, [talk to us now](https://github.com/paladini/models-to-sql-rails/issues).
 
 Original documentation
 --------------
@@ -99,5 +99,5 @@ After installation, each AR model has to_sql method that can take following opti
 Contribute
 -------------
 
-If you do like to contribute to our project, please feel free to Fork our project or talk with us by [creating a new issue](https://github.com/vivrass/models-to-sql/issues/new). Rails 3.2 port by [Martin Provencher](https://github.com/vivrass) and Rails 4.0 port + documentation by [Fernando Paladini](https://github.com/paladini).
+If you do like to contribute to our project, please feel free to Fork our project or talk with us by [creating a new issue](https://github.com/paladini/models-to-sql-rails/issues). Rails 3.2 port by [Martin Provencher](https://github.com/vivrass) and Rails 4.0 port + documentation by [Fernando Paladini](https://github.com/paladini).
 

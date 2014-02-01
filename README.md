@@ -10,7 +10,11 @@ Usage
 ---------------
 If you want use this gem in your project, you must add the following line to your `gemfile`:
 ```ruby
+# If you want the most recent version:
 gem 'models-to-sql-rails', :git => 'git://github.com/paladini/models-to-sql-rails.git'
+
+# If you want the most stable version:
+gem "models-to-sql-rails", "~> 1.0.2"
 ```
 Then, you must open your terminal (Ctrl+Alt+T) and run the following command on your project root path:
 ```shell

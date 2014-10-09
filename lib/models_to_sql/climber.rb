@@ -39,7 +39,7 @@ module ModelsToSql
     def self.sql(model)
       
       include ActiveModel::AttributeMethods
-      c = model.connection
+      c = model.class.connection
 
       quoted_columns = []
       quoted_values = []
